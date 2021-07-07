@@ -11,4 +11,4 @@ DIRECTORY = [ROOT '\ExampleData\']; %you will need to flip \ to / for mac os.
 tmin =1; tmax=29; step =1; PIV_BIN = 4; %Start time, time step for skipping a certain amount of the data, and the final resolution of the PIV data
 X_BUFFER = 5; MID_POINT = 0.5; FIT_START_POINT = [1 15 0]; %These numbers might need to be modified
 
-[CORR_LIST]   = func_find_correlation_length(U_VEL_FIELD, V_VEL_FIELD , tmin, step, 30, SCALE,PIV_BIN, MID_POINT , X_BUFFER , FIT_START_POINT);
+[CORR_LIST]   = func_find_correlation_length(U_VEL_FIELD, V_VEL_FIELD , tmin, step, tmax, SCALE,PIV_BIN, MID_POINT , X_BUFFER , FIT_START_POINT);

@@ -1,9 +1,5 @@
 function [HALFWIDTH] = func_find_correlation_length(u, v,tmin, step, tmax, scale,PIVbin,MID_POINT,X_BUFFER,FIT_START_POINT)
 
-%X_BUFFER = 5
-%MID_POINT = 0.5;
-%FIT_START_POINT = [1 15 0];
-
 for kk = tmin:step:tmax
     kk
     [rpos, ravg] = func_autocorr_vector(u(kk),v(kk));
